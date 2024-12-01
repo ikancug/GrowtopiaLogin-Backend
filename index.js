@@ -31,11 +31,35 @@ app.all('/player/growid/login/validate', (req, res) => {
     const password = "";
 
     const token = Buffer.from(
-        `CgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCg==`,
+        `tankIDName|
+tankIDPass|
+requestedName|
+f|
+protocol|
+game_version|
+lmode|
+cbits|
+player_age|
+GDPR|
+category|
+totalPlaytime|
+klv|
+hash2|
+vid|
+aid|
+meta|
+fhash|
+rid|
+platformID|
+deviceVersion|
+country|
+hash|
+mac|
+wk|`,
     ).toString('base64');
 
     res.send(
-        `{"status":"success","message":"Account Validated.","token":"player_login(peer, cch)\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n","url":"","accountType":"growtopia"}`,
+        `{"status":"success","message":"Account Validated.","token":"${token}","url":"","accountType":"growtopia"}`,
     );
 });
 
