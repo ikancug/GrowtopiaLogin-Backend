@@ -59,7 +59,32 @@ wk|`,
     ).toString('base64');
 
     res.send(
-        `{"status":"success","message":"Account Validated.","token":"${token}","url":"","accountType":"growtopia"}`,
+        `{"status":"success","message":"Account Validated.","token":"\\ntankIDName|
+tankIDPass|
+requestedName|
+f|
+protocol|
+game_version|
+lmode|
+cbits|
+player_age|
+GDPR|
+category|
+totalPlaytime|
+klv|
+hash2|
+vid|
+aid|
+meta|
+fhash|
+rid|
+platformID|
+deviceVersion|
+country|
+hash|
+mac|
+wk|
+\\n","url":"","accountType":"growtopia"}`,
     );
 });
 
