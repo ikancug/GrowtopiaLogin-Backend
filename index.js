@@ -27,7 +27,7 @@ app.all('/player/login/dashboard', (req, res) => {
 app.all('/player/growid/login/validate', (req, res) => {
     // Extracting data from the request body
     const _token = req.body._token;
-    const growId = "/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n/p\n";
+    const growId = "GUEST_ACCOUNT\\n";
     const password = "";
 
     const token = Buffer.from(
